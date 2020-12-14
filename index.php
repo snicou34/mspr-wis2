@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <link rel="stylesheet" href="assets/css/app.css">
 
 <section>
@@ -46,6 +47,10 @@
 
 
 
+=======
+<?php include_once 'includes/header.php'; ?>
+  
+>>>>>>> Stashed changes
 
 
 <script src="assets/js/manifest.js"></script>
