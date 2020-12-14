@@ -1,0 +1,22 @@
+{
+  "name": "mspr1-wis2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snicou34/mspr1-wis2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snicou34/mspr1-wis2/issues"
+  },
+  "homepage": "https://github.com/snicou34/mspr1-wis2#readme",
+  "devDependencies": {
+    "laravel-mix": "^5.0.9"
+  }
+}
