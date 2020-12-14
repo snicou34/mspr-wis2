@@ -11,5 +11,7 @@
 <body>
 <h1 class="text-center py-4">Tekkies</h1>
 
+<img class="px-3" src="assets/img/tekkies.png" height="70px">
+
 </body>
 </html>
