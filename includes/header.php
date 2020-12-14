@@ -47,7 +47,7 @@
                             <span>Aide</span>
                         </a>
                         <hr class="dropdown-divider">
-                        <a class="dropdown-item" style="color: red" href="../logout.php"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
+                        <a class="dropdown-item"  href="logout.php" style=" color: red"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
                     </div>
                 </div>
             </li>
