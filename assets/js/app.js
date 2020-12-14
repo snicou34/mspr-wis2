@@ -5,9 +5,9 @@
   !*** ./src/js/app.js ***!
   \***********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-
+__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 
 /***/ }),
 
@@ -35,4 +35,4 @@ module.exports = __webpack_require__(/*! C:\wamp64\www\mspr1-wis2\src\scss\app.s
 
 /***/ })
 
-},[[0,"/js/manifest"]]]);
+},[[0,"/js/manifest","/js/vendor"]]]);
