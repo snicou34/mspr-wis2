@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded fixed-top">
     <div class="container-fluid">
-        <a href="index.php" style="margin-right: 15px">
+        <a href="../home.php" style="margin-right: 15px">
             <img src="assets/img/tekkies.png" alt="Ceci est un logo" title="Logo Tekkies" class="logo" height="50px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="index.php"><i class="fas fa-home" style="margin-right: 4px"></i>Accueil</a>
+                    <a class="nav-link active fw-bold" aria-current="page" href="../home.php"><i class="fas fa-home" style="margin-right: 4px"></i>Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php"><i class="fas fa-users" style="margin-right: 4px"></i>Qui sommes-nous ?</a>
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-users" style="margin-right: 4px"></i>Qui sommes-nous ?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php"><i class="fas fa-bell" style="margin-right: 4px"></i>Notifications</a>
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-bell" style="margin-right: 4px"></i>Notifications</a>
                 </li>
             </ul>
             <li class="navbar-nav ml-auto">
@@ -47,7 +47,7 @@
                             <span>Aide</span>
                         </a>
                         <hr class="dropdown-divider">
-                        <a class="dropdown-item" style="color: red" href="logout.php"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
+                        <a class="dropdown-item" style="color: red" href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
                     </div>
                 </div>
             </li>

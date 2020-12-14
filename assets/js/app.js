@@ -29,8 +29,8 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/mspr1-wis2/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/mspr1-wis2/src/scss/app.scss */"./src/scss/app.scss");
+__webpack_require__(/*! C:\wamp64\www\mspr1-wis2\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\mspr1-wis2\src\scss\app.scss */"./src/scss/app.scss");
 
 
 /***/ })
