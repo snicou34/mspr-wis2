@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded fixed-top">
     <div class="container-fluid">
         <a href="index.php" style="margin-right: 6px">
             <img src="assets/img/tekkies.png" alt="Ceci est un logo" title="Logo Tekkies" class="logo" height="50px">
