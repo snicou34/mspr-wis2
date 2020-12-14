@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+<?php include_once 'includes/secure.php'; ?>
 <link rel="stylesheet" href="assets/css/app.css">
 
 <section>
@@ -23,35 +23,15 @@
                 <input name='password' type="password" class="form-control" id="exampleInputPassword1" required>
                 <small id="emailHelp" class="form-text text-muted">6 caractères minimum</small>
             </div>
+
+            <div>
+                <a href="http://localhost/mspr1-wis2/user_c.php">Se créer un compte</a>
+            </div>
+
             <button type="submit" class="btn btn-primary mb-5">Se connecter</button>
         </form>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-<?php include_once 'includes/header.php'; ?>
-  
->>>>>>> Stashed changes
-
 
 <script src="assets/js/manifest.js"></script>
 <script src="assets/js/vendor.js"></script>
