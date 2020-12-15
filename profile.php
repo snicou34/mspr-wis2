@@ -7,6 +7,10 @@ var_dump($_SESSION);
 
 
     <section>
+        <div class="py-5 d-flex justify-content-between align-items-center">
+            <h1 class="">Profil de <strong><?php echo $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name']; ?></strong></h1>
+            <a href="users_u.php?id=<?php echo $_SESSION['user']['id']; ?>" class="btn btn-primary"><i class="far fa-edit mr-2"></i>Modifier</a>
+        </div>
         <div class="container" style="margin-top: 100px">
     <img class="mb-4 mx-auto" style="height: 250px; width: 250px" src="<?php echo $_SESSION['user']['thumbnail']; ?>">
          <p>Prénom : <?php echo $_SESSION['user']['first_name']; ?></p>

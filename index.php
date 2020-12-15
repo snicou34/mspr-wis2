@@ -37,7 +37,7 @@
         </form>
 
         <p class="text-center fw-bold">Pas encore inscrit ?</p>
-        <a href="user_c.php" class="btn mt-2 mb-3" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon compte</a>
+        <a href="users_c.php" class="btn mt-2 mb-3" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon compte</a>
 
 
 </section>
