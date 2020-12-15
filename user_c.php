@@ -25,6 +25,11 @@ $users=getUsers();
             <form action="store_user.php" method="POST">
 
                 <div class="form-group">
+                    <label for="thumbnail">Votre photo de profil</label>
+                    <input type="text" id="thumbnail" name="thumbnail" class="form-control" required>
+                </div>
+
+                <div class="form-group">
                     <label for="first_name">Votre prénom</label>
                     <input type="text" id="first_name" name="first_name" class="form-control" required>
                 </div>
@@ -40,6 +45,21 @@ $users=getUsers();
                 </div>
 
                 <div class="form-group">
+                    <label for="birthday">Votre date de naissance </label>
+                    <input type="date" id="birthday" name="birthday" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Votre ville </label>
+                    <input type="text" id="city" name="city" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone_number">Votre numéro de téléphone </label>
+                    <input type="number" id="phone_number" name="phone_number" class="form-control" required>
+                </div>
+
+                <div class="form-group">
                     <label for="password">Votre mot de passe</label>
                     <input type="text" id="password" name="password" class="form-control" required>
                 </div>
@@ -47,10 +67,13 @@ $users=getUsers();
                 <button class="btn mb-3 mt-4" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto" type="submit">
                     Créer mon compte
                 </button>
+
                 <p class="text-center fw-bold">OU</p>
+
                 <button class="mb-3 mt-3" style="background-color: inherit; border: none; display: block; margin: auto">
                    <a href="index.php" class="btn" style="background-color: #E7383C; color: #FFFFFF; width: 300px">J'ai déjà un compte</a>
                 </button>
+
             </form>
 
         </div>
