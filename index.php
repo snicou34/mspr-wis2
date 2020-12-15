@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="assets/css/app.css">
 <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-      crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">
 
 <section>
     <div class="container col-6 mx-auto">
@@ -13,6 +12,7 @@
             <p>Partagez votre passion des Sneakers !</p>
             <p>Entrez en relation avec d'autres passionnés dès maintenant !</p>
         </div>
+
     </div>
 </section>
 <section>
@@ -35,12 +35,11 @@
                 connecter
             </button>
         </form>
+
         <h4 class="text-center">Ou créez votre compte dès maintenant</h4>
-        <a href="user_c.php" class="btn mt-4 mb-3"
-           style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon
-            compte</a>
-        </button>
-    </div>
+        <a href="user_c.php" class="btn mt-4 mb-3" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon compte</a>
+
+
 </section>
 <script src="assets/js/manifest.js"></script>
 <script src="assets/js/vendor.js"></script>
