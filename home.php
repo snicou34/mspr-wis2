@@ -1,27 +1,39 @@
-<?php include_once 'includes/secure.php'; ?>
-<?php include_once 'includes/header.php';
+<?php
+include_once'includes/secure.php';
+include_once 'includes/header.php';
+include_once 'includes/helpers.php';
+$posts=getPosts();
+
 ?>
-    <div class="container">
+    <div class="container" style="margin-top: 100px">
         <div class="row">
-            <div class="col">
+                        <?php if($posts): ?>
 
+                                <?php foreach ($posts as $post):
+                                    ?>
+                                <section class="col-12 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><?php echo $post['title'] ?></h5>
+                                            <p class="card-text"><?php echo $post['body']?></p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                        <img class="mb-2 mx-auto" style="height: 500px; width: 500px"  src="<?php echo $post['thumbnail'];?>">
+                                    </div>
+                                </section>
+
+                                <?php endforeach;  ?>
+
+                        <?php else: ?>
+                            <div class="alert alert-warning" role="alert">
+                                Aucun post n'est disponible pour le moment !
+                            </div>
+                        <?php endif; ?>
+
+            <a href="post_c.php" class="btn btn-primary mb-5" ><i class="fas fa-plus-circle mr-2"></i>Créer un post</a>
             </div>
 
-            <div class="col">
-                <div class="card" style="margin-top:100px ;width: 35rem;">
-                    <img src="assets/img/tekkies.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary">Like</a>
-                        <h5 class="card-title">Sébastien Nicou</h5>
-                        <p class="card-text">Voici le nouveau logo de TEKKIES</p>
 
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-            </div>
 
 
             <script src="assets/js/manifest.js"></script>

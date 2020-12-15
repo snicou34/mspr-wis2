@@ -9,4 +9,9 @@ function getUsers(){
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-
+function getPosts() {
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM posts");
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
