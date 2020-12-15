@@ -37,10 +37,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" style="background-color: #E7383C; color: #FFFFFF">
-
-                        <?php
-
-                        session_start();  ?>
+                        
                         <img src="<?php echo $_SESSION['user']['thumbnail']?>" height="30px" style="margin-right: 5px; border-radius:30px">
 
                         <?php
