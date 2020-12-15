@@ -37,8 +37,16 @@
                 <div class="btn-group">
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" style="background-color: #E7383C; color: #FFFFFF">
-                        <img src="assets/img/profile.png" height="30px" style="margin-right: 5px">
-                        Sébastien Nicou
+
+                        <?php
+
+                        session_start();  ?>
+                        <img src="<?php echo $_SESSION['user']['thumbnail']?>" height="30px" style="margin-right: 5px; border-radius:30px">
+
+                        <?php
+                        echo $_SESSION['user']['first_name'].' '.$_SESSION['user']['last_name'];
+
+                        ?>
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">
