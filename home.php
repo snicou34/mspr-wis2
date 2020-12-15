@@ -21,7 +21,20 @@ $posts=getPosts();
                                     <div class="card mb-5 shadow p-3 mb-5 bg-white rounded" style="border: none">
                                         <div class="card-body">
                                             <div class="text-end">
-                                            <button class="btn-primary"><i class="fas fa-ellipsis-v"></i></button>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fas fa-edit" style="margin-right: 3px"></i>
+                                                        <span>Modifier</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#" style=" color: red"><i class="fas fa-trash-alt" style="margin-right: 5px"></i>Supprimer</a>
+                                                </div>
+                                            </div>
                                             </div>
                                             <h4 class="card-title"><?php echo $post['title'] ?></h4>
                                             <p class="card-text"><?php echo $post['body']?></p>
@@ -42,7 +55,7 @@ $posts=getPosts();
 
         </div>
             <div class="col-3">
-                <h1>TEST</h1>
+
             </div>
         </div>
 

@@ -30,14 +30,14 @@
                        id="exampleInputPassword1" required>
                 <label for="floatingPassword">Votre mot de passe</label>
             </div>
-            <button type="submit" class="btn mt-4 mb-4"
+            <button type="submit" class="btn mt-4 mb-5"
                     style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Se
                 connecter
             </button>
         </form>
 
-        <h4 class="text-center">Ou créez votre compte dès maintenant</h4>
-        <a href="user_c.php" class="btn mt-4 mb-3" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon compte</a>
+        <p class="text-center fw-bold">Pas encore inscrit ?</p>
+        <a href="user_c.php" class="btn mt-2 mb-3" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon compte</a>
 
 
 </section>

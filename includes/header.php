@@ -38,7 +38,7 @@
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" style="background-color: #E7383C; color: #FFFFFF">
                         <img src="assets/img/profile.png" height="30px" style="margin-right: 5px">
-                        Victor Grollier
+                        Sébastien Nicou
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">
@@ -51,7 +51,6 @@
                         </a>
                         <hr class="dropdown-divider">
                         <a class="dropdown-item" href="logout.php" style=" color: red"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
-
                     </div>
                 </div>
             </li>

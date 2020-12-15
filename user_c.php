@@ -20,7 +20,7 @@ $users=getUsers();
         </div>
     </section>
 
-    <section class="col-6 mx-auto mt-2">
+    <section class="col-4 mx-auto mt-2">
         <div class="container">
             <form action="store_user.php" method="POST">
 
@@ -46,6 +46,10 @@ $users=getUsers();
 
                 <button class="btn mb-3 mt-4" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto" type="submit">
                     Créer mon compte
+                </button>
+                <p class="text-center fw-bold">OU</p>
+                <button class="mb-3 mt-3" style="background-color: inherit; border: none; display: block; margin: auto">
+                   <a href="index.php" class="btn" style="background-color: #E7383C; color: #FFFFFF; width: 300px">J'ai déjà un compte</a>
                 </button>
             </form>
 
