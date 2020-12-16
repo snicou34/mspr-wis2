@@ -6,7 +6,6 @@ $posts=getPosts();
 
 ?>
     <section class="col-8 mx-auto" style="margin-top: 130px">
-        <?php var_dump($posts); ?>
         <div class="container col-6 mt-4" >
             <form action="store_post.php" method="POST">
                 <div class="form-group mb-3">

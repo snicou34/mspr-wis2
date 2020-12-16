@@ -19,7 +19,6 @@ function getUsers(){
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-
 function getUser($id) {
     $dbh = connectDB();
     $stmt = $dbh->prepare("SELECT * FROM users WHERE id = :id");
@@ -40,3 +39,4 @@ function getPost($id) {
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
