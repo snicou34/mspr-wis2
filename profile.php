@@ -1,5 +1,4 @@
 <?php
-
 include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
@@ -8,6 +7,7 @@ include_once 'includes/helpers.php';
 
 
     <section style="margin-top: 130px">
+
         <div class="container col-6 justify-content-between align-items-center">
             <h1>Profil de <strong><?php echo $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name']; ?></strong></h1>
         </div>

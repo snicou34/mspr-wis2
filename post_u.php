@@ -3,7 +3,6 @@ include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
 $post = getPost($_GET['id']);
-var_dump($post );
 ?>
 
     <section class="mb-5" style="margin: 100px">
@@ -25,7 +24,7 @@ var_dump($post );
                 <div class="form-group">
                     <label for="thumbnail"><strong>Photo publication</strong></label>
                     <input type="text" id="thumbnail" name="thumbnail" class="form-control" value="<?php echo $post['thumbnail']; ?>">
-                    <small id="text" class="form-text text-muted">Insérer un lien d'image</small>
+                    <small id="file" class="form-text text-muted">Insérer un lien d'image</small>
                 </div>
 
                 <button class="btn btn-primary mb-3" type="submit"><i class="fas fa-check-circle mr-2"></i>
