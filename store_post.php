@@ -3,7 +3,7 @@
 $data = [
     'title' => $_POST['title'],
     'body' => $_POST['body'],
-    'thumbnail' => $_POST['thumbnail']
+    'thumbnail' => $_POST['thumbnail'],
 ];
 
 $dbh = connectDB();

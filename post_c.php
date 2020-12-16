@@ -6,11 +6,9 @@ $posts=getPosts();
 
 ?>
     <section class="col-8 mx-auto" style="margin-top: 130px">
+        <?php var_dump($posts); ?>
         <div class="container col-6 mt-4" >
             <form action="store_post.php" method="POST">
-
-                <h4 class="mb-3">Détails de votre publication</h4>
-
                 <div class="form-group mb-3">
                     <label for="title">Ajouter un titre à votre publication :</label>
                     <input type="text" id="title" name="title" class="form-control" required>
