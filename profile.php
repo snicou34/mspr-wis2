@@ -7,7 +7,7 @@ include_once 'includes/helpers.php';
 
 
 
-    <section style="margin-top: 200px">
+    <section style="margin-top: 130px">
         <div class="container col-6 justify-content-between align-items-center">
             <h1>Profil de <strong><?php echo $_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name']; ?></strong></h1>
         </div>
@@ -25,7 +25,5 @@ include_once 'includes/helpers.php';
 
     </section>
 
-    <script src="assets/js/manifest.js"></script>
-    <script src="assets/js/vendor.js"></script>
-    <script src="assets/js/app.js"></script>
+
 <?php include_once 'includes/footer1.php'; ?>

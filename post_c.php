@@ -18,7 +18,7 @@ $posts=getPosts();
 
                 <div class="form-group mb-3">
                     <label for="body">Ajouter une description à votre publication :</label>
-                    <input type="text" id="body" name="body" class="form-control" required>
+                    <textarea type="text" id="body" name="body" class="form-control" required></textarea>
                 </div>
 
                 <div class="form-group mb-3">

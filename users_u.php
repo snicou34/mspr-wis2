@@ -1,15 +1,16 @@
-<?php include_once 'includes/header.php';
+<?php
+include_once 'includes/header.php';
+include_once 'includes/secure.php';
 include_once 'includes/helpers.php';
-session_start();
 $user = getUser($_GET['id']);
 ?>
 
-    <section class="mb-5"style="margin-top: 43px" >
-        <div class="container col-6">
+    <section style="margin-top: 80px" >
+        <div class="container col-6 mx-auto">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 class="py-5">Modifier mon profil</h1>
+                <h3 class="mb-3">Modifier mon profil</h3>
             </div>
-            <form action="update_users.php?id=<?php echo $_SESSION['user']['id']; ?>" method="POST">
+            <form  class="col-6" action="update_users.php?id=<?php echo $_SESSION['user']['id']; ?>" method="POST">
 
                 <div class="form-group">
                     <label for="price"><strong>Votre prénom :</strong></label>
@@ -41,8 +42,8 @@ $user = getUser($_GET['id']);
                     <input type="text" id="city" name="city" class="form-control" value="<?php echo $user['city']; ?>" required>
                 </div>
 
-                <button class="btn btn-primary mb-3" type="submit"><i class="fas fa-check-circle mr-2"></i>
-                    Modifier mon profil
+                <button class="btn btn-primary mb-4 mt-3" type="submit"><i class="fas fa-check-circle" style="margin-right: 5px"></i>
+                    Valider les modifications
                 </button>
 
         </div>
