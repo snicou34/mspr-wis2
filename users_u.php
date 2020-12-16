@@ -5,11 +5,11 @@ include_once 'includes/helpers.php';
 $user = getUser($_GET['id']);
 ?>
 
-    <section style="margin-top: 80px" >
+    <section style="margin-top: 130px" >
         <div class="container col-6 mx-auto">
             <div class="d-flex justify-content-between align-items-center">
                 <h3 class="mb-3">Modifier mon profil</h3>
-            </div>
+            </div>      
             <form  class="col-6" action="update_users.php?id=<?php echo $_SESSION['user']['id']; ?>" method="POST">
 
                 <div class="form-group">
@@ -34,7 +34,11 @@ $user = getUser($_GET['id']);
 
                 <div class="form-group">
                     <label for="birthday"><strong>Votre date de naissance :</strong></label>
+<<<<<<< Updated upstream
                     <input type="date" id="birthday" name="birthday" class="form-control" value="<?php echo $_SESSION['user']['birthday']; ?>" required>
+=======
+                    <input type="text" id="birthday" name="birthday" class="form-control" value="<?php echo $user['birthday']; ?>" required>
+>>>>>>> Stashed changes
                 </div>
 
                 <div class="form-group">

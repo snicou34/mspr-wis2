@@ -29,10 +29,10 @@ $posts=getPosts();
 
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="post_u.php?id=<?php echo $post['id']; ?>">
-                                                        <i class="fas fa-edit" style="margin-right: 3px"></i>
-                                                        <span>Modifier</span>
+                                                        <i class="fas fa-edit" style="margin-right: 3px"></i>Modifier
                                                     </a>
-                                                    <a class="dropdown-item" href="post_d.php?id=<?php echo $post['id']; ?>" style=" color: red"><i class="far fa-trash-alt"></i>Supprimer</a>
+                                                    <a class="dropdown-item" href="post_d.php?id=<?php echo $post['id']; ?>" style=" color: red"><i class="far fa-trash-alt" style="margin-right:
+                                                    5px"></i>Supprimer</a>
                                                 </div>
                                             </div>
                                             </div>

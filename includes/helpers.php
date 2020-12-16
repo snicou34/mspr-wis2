@@ -1,6 +1,6 @@
 <?php
 function connectDB(){
-    return new PDO('mysql:host=localhost;dbname=tekkies', 'root', '', [PDO:: MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']);
+    return new PDO('mysql:host=localhost;dbname=tekkies', 'root', 'root', [PDO:: MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']);
 }
 
 function ConnectUser($data){
