@@ -31,19 +31,29 @@ $posts = getPosts();
                                             <a class="dropdown-item" href="post_u.php?id=<?php echo $post['id']; ?>">
                                                 <i class="fas fa-edit" style="margin-right: 3px"></i>Modifier
                                             </a>
+<<<<<<< HEAD
                                             <a class="dropdown-item" href="post_d.php?id=<?php echo $post['id']; ?>"
                                                style=" color: red"><i class="far fa-trash-alt" style="margin-right:
+=======
+                                            <a class="dropdown-item" href="post_d.php?id=<?php echo $post['id']; ?>" style=" color: red"><i class="far fa-trash-alt" style="margin-right:
+>>>>>>> master
                                                     5px"></i>Supprimer</a>
                                         </div>
                                     </div>
                                 </div>
                                 <h4 class="card-title"><?php echo $post['title'] ?></h4>
                                 <p class="card-text"><?php echo $post['body'] ?></p>
+<<<<<<< HEAD
                                 <p class="card-text"><small class="text-muted">Publié
                                         le <?php echo $post['created_at'] ?></small></p>
                             </div>
                             <img class="mb-4 mx-auto" style="height: 500px; width: 500px"
                                  src="<?php echo $post['thumbnail']; ?>">
+=======
+                                <p class="card-text"><small class="text-muted">Publié le <?php echo $post['created_at'] ?></small></p>
+                            </div>
+                            <img class="mb-4 mx-auto" style="height: 500px; width: 500px" src="<?php echo $post['thumbnail']; ?>">
+>>>>>>> master
                         </div>
 
 

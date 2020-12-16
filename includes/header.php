@@ -1,4 +1,3 @@
-
 <?php include_once 'includes/secure.php'; ?>
 
 <!DOCTYPE html>
@@ -43,7 +42,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #E7383C; color: #FFFFFF">
 
-                         <img src="<?php echo $_SESSION['user']['thumbnail']?> "style="margin-right: 5px; border-radius: 50%; width: 30px; height: 30px">
+                        <img src="<?php echo $_SESSION['user']['thumbnail'] ?> " style="margin-right: 5px; border-radius: 50%; width: 30px; height: 30px">
 
                         <?php
 
@@ -56,7 +55,7 @@
                             <i class="fas fa-user" style="margin-right: 3px"></i>
                             <span>Mon profil</span>
                         </a>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="help.php">
                             <i class="fas fa-question-circle" style="margin-right: 3px"></i>
                             <span>Aide</span>
                         </a>

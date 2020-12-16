@@ -34,7 +34,10 @@ $user = getUser($_GET['id']);
 
                 <div class="form-group">
                     <label for="birthday"><strong>Votre date de naissance :</strong></label>
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
                     <input type="date" id="birthday" name="birthday" class="form-control" value="<?php echo $user['birthday']; ?>" required>
 
                 </div>
