@@ -1,6 +1,11 @@
 <?php
+<<<<<<< Updated upstream
 include_once 'includes/header.php';
 include_once 'includes/secure.php';
+=======
+include_once 'includes/secure.php';
+include_once 'includes/header.php';
+>>>>>>> Stashed changes
 include_once 'includes/helpers.php';
 $user = getUser($_GET['id']);
 ?>

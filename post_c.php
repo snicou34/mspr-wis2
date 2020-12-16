@@ -23,7 +23,7 @@ $posts=getPosts();
 
                 <div class="form-group mb-3">
                     <label for="thumbnail">Ajouter une image à votre publication :</label>
-                    <input type="text" id="thumbnail" name="thumbnail" class="form-control" required>
+                    <input type="text" id="thumbnail" name="thumbnail" class="form-control" >
                     <small id="emailHelp" class="form-text text-muted">Insérer le lien de l'image</small>
                 </div>
 

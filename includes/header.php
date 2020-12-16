@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
+
 <?php include_once 'includes/secure.php'; ?>
-=======
->>>>>>> Stashed changes
 
 <!DOCTYPE html>
 <html lang="fr">
