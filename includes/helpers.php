@@ -12,6 +12,40 @@ function ConnectUser($data){
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function getUsers(){
     $dbh = connectDB();
     $stmt = $dbh->prepare("SELECT * FROM users");

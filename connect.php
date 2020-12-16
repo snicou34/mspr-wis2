@@ -17,5 +17,6 @@ else {
     session_start();
     $_SESSION['user'] = $result;
     header('Location: home.php');
+
 }
 
