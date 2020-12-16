@@ -12,40 +12,6 @@ function ConnectUser($data){
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function getUsers(){
     $dbh = connectDB();
     $stmt = $dbh->prepare("SELECT * FROM users");
@@ -67,4 +33,10 @@ function getPosts() {
     $stmt = $dbh->prepare("SELECT * FROM posts");
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+function getPost($id) {
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM posts WHERE id = $id");
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
 }
