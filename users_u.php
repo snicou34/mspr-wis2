@@ -34,11 +34,8 @@ $user = getUser($_GET['id']);
 
                 <div class="form-group">
                     <label for="birthday"><strong>Votre date de naissance :</strong></label>
-<<<<<<< Updated upstream
-                    <input type="date" id="birthday" name="birthday" class="form-control" value="<?php echo $_SESSION['user']['birthday']; ?>" required>
-=======
-                    <input type="text" id="birthday" name="birthday" class="form-control" value="<?php echo $user['birthday']; ?>" required>
->>>>>>> Stashed changes
+                    <input type="date" id="birthday" name="birthday" class="form-control" value="<?php echo $user['birthday']; ?>" required>
+
                 </div>
 
                 <div class="form-group">
