@@ -1,6 +1,4 @@
-<?php
-
-?>
+<?php include_once 'includes/secure.php'; ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -51,8 +49,9 @@
                             style="background-color: #E7383C; color: #FFFFFF">
 
 
-                        <img src="<?php echo $_SESSION['user']['thumbnail'] ?>" height="30px"
-                             style="margin-right: 5px; border-radius:30px">
+
+
+                        <img src="<?php echo $_SESSION['user']['thumbnail']?> "style="margin-right: 5px; border-radius: 50%; width: 30px; height: 30px">
 
                         <?php
 
@@ -61,7 +60,7 @@
                         ?>
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="profile.php">
                             <i class="fas fa-user" style="margin-right: 3px"></i>
                             <span>Mon profil</span>
                         </a>
@@ -70,9 +69,7 @@
                             <span>Aide</span>
                         </a>
                         <hr class="dropdown-divider">
-                        <a class="dropdown-item" href="logout.php" style=" color: red"><i class="fas fa-sign-out-alt"
-                                                                                          style="margin-right: 5px"></i>Se
-                            déconnecter</a>
+                        <a class="dropdown-item" href="logout.php" style=" color: red"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
                     </div>
                 </div>
             </li>

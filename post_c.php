@@ -35,8 +35,4 @@ $posts=getPosts();
         </div>
     </section>
 
-    <script src="assets/js/manifest.js"></script>
-    <script src="assets/js/vendor.js"></script>
-    <script src="assets/js/app.js"></script>
-
 <?php include_once 'includes/footer1.php'; ?>
