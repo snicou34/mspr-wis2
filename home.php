@@ -3,6 +3,7 @@ include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
 $posts = getPosts();
+$users = getUsers();
 
 ?>
 
@@ -10,6 +11,27 @@ $posts = getPosts();
         <div class="row">
             <div class="col-3">
                 <h4>Liste des utilisateurs</h4>
+                        <?php if($users): ?>
+                            <table class="table mt-3">
+                                <tbody>
+                                <?php foreach ($users as $user): ?>
+                                <hr>
+                                <p><?php echo $user['first_name'] ?> <?php echo $user['last_name'] ?></p>
+                                    <tr>
+                                        <td><?php echo $user['first_name'] ?></td>
+                                        <td><?php echo $user['last_name'] ?></td>
+                                    </tr>
+                                <?php endforeach;  ?>
+                                <hr>
+                                </tbody>
+                            </table>
+                        <?php else: ?>
+                            <div class="alert alert-warning" role="alert">
+                                Nous n'avons pas de clients pour le moment.
+                            </div>
+                        <?php endif; ?>
+
+
             </div>
             <div class="col-6">
 
