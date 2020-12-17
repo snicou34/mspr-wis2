@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="assets/css/app.css">
 <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">
+<title>Se connecter - Tekkies™</title>
 
 <section>
     <div class="container col-6 mx-auto">

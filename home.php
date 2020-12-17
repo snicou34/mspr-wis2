@@ -89,8 +89,8 @@ $likes = getLikes();
 
 
                             <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
-                            <button type="submit" class="btn btn-primary">
-                                <?php echo $likes['post_id'] ?> J'aime
+                            <button type="submit" class="btn rounded-pill" style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart" style="margin-right: 5px"></i>
+                                J'aime
                             </button>
                             </form>
 
