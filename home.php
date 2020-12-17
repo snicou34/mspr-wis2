@@ -4,6 +4,7 @@ include_once 'includes/header.php';
 include_once 'includes/helpers.php';
 require_once 'vendor/autoload.php';
 use Carbon\Carbon;
+
 $posts = getPosts();
 $users = getUsers();
 $likes = getLikes();
@@ -49,73 +50,76 @@ $likes = getLikes();
 
 
                         <div class="card mb-5 shadow p-3 mb-5 bg-white rounded" style="border: none">
-                            <div class="card-body">
-                                <div class="container mb-4">
-                                    <div class="row">
-                                        <div class="col-2">
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="text-center">
-                                                <h4>
-                                                    <img src="<?php echo $postuser['thumbnail'] ?> "
-                                                         style="margin-right: 5px; border-radius: 50%; width: 45px; height: 45px">
-                                                    <strong><?php echo $postuser['first_name'] . ' ' . $postuser['last_name'] ?></strong>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="text-end" style="margin-left: 50px">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn dropdown-toggle"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
+                                <div class="row">
+                                    <div class="col-6">
+                                      <div class="mb-4">
+                                      <img src="<?php echo $postuser['thumbnail'] ?> "style="margin-right: 5px; border-radius: 50%; width: 45px; height: 45px">
+                                      <strong><?php echo $postuser['first_name'] . ' ' . $postuser['last_name'] ?></strong>
+                                      </div>
+                                    </div>
+                                    <div class="col-4">
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="text-end" style="margin-left: 50px">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn dropdown-toggle"
+                                                        data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
 
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item"
-                                                           href="post_u.php?id=<?php echo $post['id']; ?>">
-                                                            <i class="fas fa-edit" style="margin-right: 3px"></i>Modifier
-                                                        </a>
-                                                        <a class="dropdown-item"
-                                                           href="post_d.php?id=<?php echo $post['id']; ?>"
-                                                           style=" color: red"><i class="far fa-trash-alt"
-                                                                                  style="margin-right:5px"></i>Supprimer</a>
-                                                    </div>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item"
+                                                       href="post_u.php?id=<?php echo $post['id']; ?>">
+                                                        <i class="fas fa-edit" style="margin-right: 3px"></i>Modifier
+                                                    </a>
+                                                    <a class="dropdown-item"
+                                                       href="post_d.php?id=<?php echo $post['id']; ?>"
+                                                       style=" color: red"><i class="far fa-trash-alt"
+                                                                              style="margin-right:5px"></i>Supprimer</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
+
+
                                 <h4 class="card-title"><?php echo $post['title'] ?></h4>
-                                <p class="card-text"><?php echo $post['body'] ?></p>
-                                <p class="card-text"><small class="text-muted">Publié
-                                        <?php
+                                <p class="card-text mb-2"><?php echo $post['body'] ?></p>
 
 
-
-                                        date_default_timezone_set('Europe/Paris');
-
-
-                                        $date = Carbon::make($post['created_at'])->locale('fr-FR');
-
-
-                                        echo $date->diffForHumans(); ?>
-
-                                    </small></p>
-                            </div>
-                            <img class="mb-4 mx-auto" style="height: auto; width: 100% "
+                            <img class="mb-4 mt-2 mx-auto" style="height: auto; width: 100% "
                                  src="<?php echo $post['thumbnail']; ?>">
 
+                            <div class="row">
+                                <div class="col-4">
+                                    <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
+                                        <button type="submit" class="btn rounded-pill"
+                                                style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart"
+                                                                                                     style="margin-right: 5px"></i>
+                                            J'aime
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="col-4">
+                                </div>
+                                <div class="col-4">
+                                    <p class="card-text text-end mt-2"><small class="text-muted">Publié
+                                            <?php
 
-                            <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
-                                <button type="submit" class="btn rounded-pill"
-                                        style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart"
-                                                                                             style="margin-right: 5px"></i>
-                                    J'aime
-                                </button>
-                            </form>
+
+                                            date_default_timezone_set('Europe/Paris');
+
+
+                                            $date = Carbon::make($post['created_at'])->locale('fr-FR');
+
+
+                                            echo $date->diffForHumans(); ?>
+
+                                        </small></p>
+                                </div>
+                            </div>
 
 
                         </div>

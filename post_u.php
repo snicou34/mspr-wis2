@@ -5,9 +5,9 @@ include_once 'includes/helpers.php';
 $post = getPost($_GET['id']);
 ?>
 
-    <section class="mb-5 col-6 mx-auto" style="margin: 100px">
+    <section class="card mb-5 shadow p-3 mb-5 bg-white rounded mb-5 col-4 mx-auto" style="margin: 160px; border: none">
 
-        <div class="container col-6">
+        <div class="container col-8">
 
             <h4 class="mb-3">Détails de votre publication</h4>
             <form action="update_post.php?id=<?php echo $post['id']; ?>" method="POST">
@@ -26,7 +26,7 @@ $post = getPost($_GET['id']);
                 <div class="form-group mb-3">
                     <label for="thumbnail">Modifier l'image de votre publication :</label>
                     <input type="text" id="thumbnail" name="thumbnail" class="form-control" value="<?php echo $post['thumbnail']; ?>">
-                    <small id="file" class="form-text text-muted">Insérer un lien d'image</small>
+                    <small id="file" class="form-text text-muted">Insérer le lien d'une image</small>
                 </div>
 
                 <button class="btn custom mb-3" type="submit"><i class="fas fa-check-circle mr-2"></i>
