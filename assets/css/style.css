@@ -1,0 +1,34 @@
+.custom {
+    background-color: #E7383C;
+    color: #ffffff;
+}
+
+.custom:hover {
+    color: #ffffff;
+}
+
+.custom-main {
+    background-color: #E7383C;
+    color: #FFFFFF;
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.custom-main:hover {
+    color: #ffffff;
+}
+
+.sidebar1 {
+    background-color: #E7383C;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 12px
+}
+
+.sidebar2 {
+    background-color: #B2B2B2;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 12px
+}

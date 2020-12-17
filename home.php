@@ -11,7 +11,7 @@ $likes = getLikes();
     <section class="container" style="margin-top: 130px">
         <div class="row">
             <div class="col-3">
-                <h4 class="text-center" style="background-color: #E7383C; color: #FFFFFF; padding: 15px; border-radius: 12px">
+                <h4 class="text-center sidebar1">
                     <i class="fas fa-users" style="margin-right: 8px"></i>
                     Liste des utilisateurs
                 </h4>
@@ -56,7 +56,7 @@ $likes = getLikes();
                                             <div class="text-center">
                                                 <h4>
                                                     <img src="<?php echo $postuser['thumbnail'] ?> "
-                                                         style="margin-right: 5px; border-radius: 50%; width: 35px; height: 35px">
+                                                         style="margin-right: 5px; border-radius: 50%; width: 45px; height: 45px">
                                                     <strong><?php echo $postuser['first_name'] . ' ' . $postuser['last_name'] ?></strong>
                                                 </h4>
                                             </div>
@@ -113,10 +113,10 @@ $likes = getLikes();
 
             </div>
             <div class="col-3">
-                <h4 class="text-center mb-3" style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-bell" style="margin-right: 8px"></i>Mes
+                <h4 class="text-center sidebar2 mb-3"><i class="fas fa-bell" style="margin-right: 8px"></i>Mes
                     notifications</h4>
 
-                <h4 class="text-center" style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-comments" style="margin-right: 8px"></i>Mes
+                <h4 class="text-center sidebar2"><i class="fas fa-comments" style="margin-right: 8px"></i>Mes
                     messages</h4>
 
             </div>

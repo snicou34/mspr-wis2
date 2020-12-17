@@ -23,7 +23,7 @@ include_once 'includes/helpers.php';
             <p><strong>Votre date de naissance : </strong><?php echo $_SESSION['user']['birthday']; ?></p>
             <p><strong>Votre ville : </strong><?php echo $_SESSION['user']['city']; ?></p>
 
-            <a href="users_u.php?id=<?php echo $_SESSION['user']['id']; ?>" class="btn mb-4" style="background-color: #E7383C; color: #FFFFFF"><i
+            <a href="users_u.php?id=<?php echo $_SESSION['user']['id']; ?>" class="btn custom mb-4"><i
                         class="far fa-edit" style="margin-right: 5px"></i>Modifier mon profil</a>
         </div>
     </section>

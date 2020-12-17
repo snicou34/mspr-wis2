@@ -3,6 +3,7 @@ include_once 'includes/helpers.php';
 $users=getUsers();
 ?>
 <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">
 <title>Créer mon compte - Tekkies™</title>
@@ -65,14 +66,14 @@ $users=getUsers();
                     <input type="text" id="password" name="password" class="form-control" required>
                 </div>
 
-                <button class="btn mb-3 mt-4" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto" type="submit">
+                <button class="btn custom-main mb-3 mt-4" type="submit">
                     Créer mon compte
                 </button>
 
                 <p class="text-center fw-bold">OU</p>
 
                 <button class="mb-3 mt-3" style="background-color: inherit; border: none; display: block; margin: auto">
-                   <a href="index.php" class="btn" style="background-color: #E7383C; color: #FFFFFF; width: 300px">J'ai déjà un compte</a>
+                   <a href="index.php" class="btn custom-main">J'ai déjà un compte</a>
                 </button>
 
             </form>

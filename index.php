@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">
 <title>Se connecter - Tekkies™</title>
@@ -31,14 +32,13 @@
                        id="exampleInputPassword1" required>
                 <label for="floatingPassword">Votre mot de passe</label>
             </div>
-            <button type="submit" class="btn mt-4 mb-5"
-                    style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Se
-                connecter
+            <button type="submit" class="btn custom-main mt-4 mb-5">
+                Se connecter
             </button>
         </form>
 
         <p class="text-center fw-bold">Pas encore inscrit ?</p>
-        <a href="users_c.php" class="btn mt-2 mb-3" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto">Créer mon compte</a>
+        <a href="users_c.php" class="btn custom-main mt-2 mb-3">Créer mon compte</a>
 
 
 </section>

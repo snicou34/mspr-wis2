@@ -24,7 +24,8 @@ $posts=getPosts();
                     <small id="emailHelp" class="form-text text-muted">Insérer le lien de l'image</small>
                 </div>
 
-                <button class="btn mb-3" type="submit" style="background-color: #E7383C; color: #FFFFFF; width: 300px; display: block; margin: auto"><i class="fas fa-paper-plane" style="margin-right: 5px"></i>
+                <button class="btn custom-main mb-3" type="submit"><i class="fas fa-paper-plane"
+                                                                                                                                                         style="margin-right: 5px"></i>
                     Publier votre publication
                 </button>
             </form>

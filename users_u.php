@@ -49,7 +49,7 @@ $user = getUser($_GET['id']);
                     <input type="text" id="city" name="city" class="form-control" value="<?php echo $_SESSION['user']['city']; ?>" required>
                 </div>
 
-                <button class="btn mb-4 mt-3" type="submit" style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-check-circle" style="margin-right: 5px"></i>
+                <button class="btn custom mb-4 mt-3" type="submit"><i class="fas fa-check-circle" style="margin-right: 5px"></i>
                     Valider les modifications
                 </button>
 
