@@ -29,7 +29,7 @@ $post = getPost($_GET['id']);
                     <small id="file" class="form-text text-muted">Insérer un lien d'image</small>
                 </div>
 
-                <button class="btn btn-primary mb-3" type="submit"><i class="fas fa-check-circle mr-2"></i>
+                <button class="btn mb-3" type="submit" style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-check-circle mr-2"></i>
                     Actualiser le post
                 </button>
 
