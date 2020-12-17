@@ -40,8 +40,8 @@
             </ul>
             <li class="navbar-nav ml-auto">
                 <button style="background-color: inherit; border: none">
-                    <a href="post_c.php" class="btn btn-primary"><i class="fas fa-plus-circle"
-                                                                    style="margin-right: 5px"></i>Ajouter un post</a>
+                    <a href="post_c.php" class="btn btn-outline-dark" style="padding: 13px"><i class="fas fa-plus"
+                                                                    style="margin-right: 8px"></i>Publier un post</a>
                 </button>
                 <div class="btn-group">
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
