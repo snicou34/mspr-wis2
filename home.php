@@ -2,10 +2,7 @@
 include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
-//Permet de charger les dépendances php
 require_once 'vendor/autoload.php';
-
-// On utilise Carbon pour gérer les dates
 use Carbon\Carbon;
 $posts = getPosts();
 $users = getUsers();

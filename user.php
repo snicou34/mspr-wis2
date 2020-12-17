@@ -2,9 +2,12 @@
 include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
+require_once 'vendor/autoload.php';
+use Carbon\Carbon;
 $id = $_GET['id'];
 $user = getUser($id);
 $posts = getPostsUser($id);
+$likes = getUserLikes($id);
 ?>
 
 
@@ -34,8 +37,15 @@ $posts = getPostsUser($id);
                                 <div class="card-body">
                                     <h4 class="card-title"><?php echo $post['title'] ?></h4>
                                     <p class="card-text"><?php echo $post['body'] ?></p>
-                                    <p class="card-text"><small class="text-muted">Publié
-                                            le <?php echo $post['created_at'] ?></small></p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Publié
+                                            <?php
+                                            date_default_timezone_set('Europe/Paris');
+                                            $date = Carbon::make($post['created_at'])->locale('fr-FR');
+                                            echo $date->diffForHumans();
+                                            ?>
+                                        </small>
+                                    </p>
                                 </div>
                                 <img class="mb-4 mx-auto" style="height: auto; width: 100% "
                                      src="<?php echo $post['thumbnail']; ?>">
@@ -50,15 +60,44 @@ $posts = getPostsUser($id);
             </section>
         </div>
     </div>
+    <div class="row">
+        <div class="col-6 mx-auto">
+            <section>
+                <div>
 
-    <section>
-        <div>
+                    <h2>Photos aimées par <?php echo $user['first_name'] ?></h2>
+                    <?php foreach ($likes as $post):
+                        $userpost = getUser($post['user_id']);
+                        ?>
 
-            <h2>Photos aimées par <?php echo $user['first_name'] ?></h2>
+                        <div class="card mb-5 shadow p-3 mb-5 bg-white rounded" style="border: none">
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $post['title'] ?></h4>
+                                <p class="card-text"><?php echo $post['body'] ?></p>
+                                <p class="card-text">
+                                    <small class="text-muted">Publié
+                                        <?php
+                                        date_default_timezone_set('Europe/Paris');
+                                        $date = Carbon::make($post['created_at'])->locale('fr-FR');
+                                        echo $date->diffForHumans();
+                                        ?>
+                                    </small>
+                                </p>
+                            </div>
+                            <img class="mb-4 mx-auto" style="height: auto; width: 100% "
+                                 src="<?php echo $post['thumbnail']; ?>">
+                        </div>
 
 
+                    <?php endforeach; ?>
+
+
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
+
+
 
 
 <?php include_once 'includes/footer1.php'; ?>

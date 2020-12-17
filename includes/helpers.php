@@ -46,6 +46,14 @@ function getPostsUser($id)
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+function getUserLikes($id)
+{
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM likes INNER JOIN posts ON posts.id = likes.post_id WHERE likes.user_id = :id");
+    $stmt->bindParam(':id', $id);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 function getPost($id)
 {
     $dbh = connectDB();
