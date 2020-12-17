@@ -10,15 +10,16 @@ $posts = getPostsUser($id);
 $likes = getUserLikes($id);
 ?>
 
+    <section style="margin-top: 130px">
 
-    <section style="margin-top: 90px">
-        <div class="container">
-            <div class="mb-5">
-                <img src="<?php echo $user['thumbnail']; ?>">
-                <p>Prénom : <strong><?php echo $user['first_name']; ?></strong></p>
-                <p>Nom : <strong><?php echo $user['last_name'] ?></strong></p>
-                <p>Ville : <strong><?php echo $user['city'] ?></strong></p>
-            </div>
+        <div class="container col-6 justify-content-between align-items-center">
+
+        </div>
+        <div class="container col-6">
+            <img class="mb-3 mt-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="height: 300px"src="<?php echo $user['thumbnail']; ?>">
+            <p>Prénom : <strong><?php echo $user['first_name']; ?></strong></p>
+            <p>Nom : <strong><?php echo $user['last_name'] ?></strong></p>
+            <p>Ville : <strong><?php echo $user['city'] ?></strong></p>
         </div>
     </section>
     <div class="row">

@@ -3,12 +3,12 @@ include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
 require_once 'vendor/autoload.php';
+
 use Carbon\Carbon;
 
 $posts = getPosts();
 $users = getUsers();
 $likes = getLikes();
-
 ?>
 
     <section class="container" style="margin-top: 130px">
@@ -46,19 +46,22 @@ $likes = getLikes();
 
                     <?php foreach ($posts as $post):
                         $postuser = getUser($post['user_id']);
+                        $count = getCountLikes($post['id']);
                         ?>
 
 
                         <div class="card mb-5 shadow p-3 mb-5 bg-white rounded" style="border: none">
-                                <div class="row">
-                                    <div class="col-6">
-                                      <div class="mb-4">
-                                      <img src="<?php echo $postuser['thumbnail'] ?> "style="margin-right: 5px; border-radius: 50%; width: 45px; height: 45px">
-                                      <strong><?php echo $postuser['first_name'] . ' ' . $postuser['last_name'] ?></strong>
-                                      </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-4">
+                                        <img src="<?php echo $postuser['thumbnail'] ?> "
+                                             style="margin-right: 5px; border-radius: 50%; width: 45px; height: 45px">
+                                        <strong><?php echo $postuser['first_name'] . ' ' . $postuser['last_name'] ?></strong>
                                     </div>
-                                    <div class="col-4">
-                                    </div>
+                                </div>
+                                <div class="col-4">
+                                </div>
+                                <?php if ($_SESSION['user']['id'] === $post['user_id']) : ?>
                                     <div class="col-2">
                                         <div class="text-end" style="margin-left: 50px">
                                             <div class="btn-group">
@@ -81,12 +84,12 @@ $likes = getLikes();
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php endif; ?>
+                            </div>
 
 
-
-                                <h4 class="card-title"><?php echo $post['title'] ?></h4>
-                                <p class="card-text mb-2"><?php echo $post['body'] ?></p>
+                            <h4 class="card-title"><?php echo $post['title'] ?></h4>
+                            <p class="card-text mb-2"><?php echo $post['body'] ?></p>
 
 
                             <img class="mb-4 mt-2 mx-auto" style="height: auto; width: 100% "
@@ -96,9 +99,10 @@ $likes = getLikes();
                                 <div class="col-4">
                                     <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
                                         <button type="submit" class="btn rounded-pill"
-                                                style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart"
-                                                                                                     style="margin-right: 5px"></i>
-                                            J'aime
+                                                style="background-color: #E7383C; color: #FFFFFF"><i
+                                                    class="fas fa-heart"
+                                                    style="margin-right: 5px"></i>
+                                            J'aime <?php echo $count['nb_likes'] ?>
                                         </button>
                                     </form>
                                 </div>
@@ -135,10 +139,14 @@ $likes = getLikes();
 
             </div>
             <div class="col-3">
-                <h4 class="text-center mb-3" style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-bell" style="margin-right: 8px"></i>Mes
+                <h4 class="text-center mb-3"
+                    style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i
+                            class="fas fa-bell" style="margin-right: 8px"></i>Mes
                     notifications</h4>
 
-                <h4 class="text-center" style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-comments" style="margin-right: 8px"></i>Mes
+                <h4 class="text-center"
+                    style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i
+                            class="fas fa-comments" style="margin-right: 8px"></i>Mes
                     messages</h4>
 
             </div>
