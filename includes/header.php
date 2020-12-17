@@ -25,24 +25,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="home.php"><i class="fas fa-home" style="margin-right: 4px"></i>Accueil</a>
+                    <a class="nav-link active fw-bold" aria-current="page" href="home.php"><i class="fas fa-home"
+                                                                                              style="margin-right: 4px"></i>Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.php"><i class="fas fa-users" style="margin-right: 4px"></i>Qui
+                    <a class="nav-link active" aria-current="page" href="about.php"><i class="fas fa-users"
+                                                                                       style="margin-right: 4px"></i>Qui
                         sommes-nous ?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-current="page" href="#"><i class="fas fa-bell" style="margin-right: 4px"></i>Notifications</a>
+                    <a class="nav-link disabled" aria-current="page" href="#"><i class="fas fa-bell"
+                                                                                 style="margin-right: 4px"></i>Notifications</a>
                 </li>
             </ul>
             <li class="navbar-nav ml-auto">
                 <button style="background-color: inherit; border: none">
-                    <a href="post_c.php" class="btn btn-primary"><i class="fas fa-plus-circle" style="margin-right: 5px"></i>Ajouter un post</a>
+                    <a href="post_c.php" class="btn btn-primary"><i class="fas fa-plus-circle"
+                                                                    style="margin-right: 5px"></i>Ajouter un post</a>
                 </button>
                 <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #E7383C; color: #FFFFFF">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" style="background-color: #E7383C; color: #FFFFFF">
 
-                        <img src="<?php echo $_SESSION['user']['thumbnail'] ?> " style="margin-right: 5px; border-radius: 50%; width: 30px; height: 30px">
+                        <img src="<?php echo $_SESSION['user']['thumbnail'] ?> "
+                             style="margin-right: 5px; border-radius: 50%; width: 30px; height: 30px">
 
                         <?php
 
@@ -60,7 +66,9 @@
                             <span>Aide</span>
                         </a>
                         <hr class="dropdown-divider">
-                        <a class="dropdown-item" href="logout.php" style=" color: red"><i class="fas fa-sign-out-alt" style="margin-right: 5px"></i>Se déconnecter</a>
+                        <a class="dropdown-item" href="logout.php" style=" color: red"><i class="fas fa-sign-out-alt"
+                                                                                          style="margin-right: 5px"></i>Se
+                            déconnecter</a>
                     </div>
                 </div>
             </li>
