@@ -13,12 +13,12 @@
     width: 300px;
     margin: auto;
     display: block;
+
 }
 
 .custom-main:hover {
     color: #ffffff;
 }
-
 .sidebar1 {
     background-color: #E7383C;
     color: #FFFFFF;

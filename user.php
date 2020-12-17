@@ -27,7 +27,7 @@ $likes = getUserLikes($id);
             <section>
                 <div>
 
-                    <h2>Photos publiées de <?php echo $user['first_name'] ?></h2>
+                    <h2>Publications de <?php echo $user['first_name'] ?></h2>
                     <div>
 
                         <?php foreach ($posts as $post):
@@ -66,7 +66,7 @@ $likes = getUserLikes($id);
             <section>
                 <div>
 
-                    <h2>Photos aimées par <?php echo $user['first_name'] ?></h2>
+                    <h2>Publications aimées par <?php echo $user['first_name'] ?></h2>
                     <?php foreach ($likes as $post):
                         $userpost = getUser($post['user_id']);
                         ?>
