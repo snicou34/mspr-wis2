@@ -5,13 +5,16 @@ include_once 'includes/helpers.php';
 $posts = getPosts();
 $users = getUsers();
 $likes = getLikes();
+
 ?>
 
     <section class="container" style="margin-top: 130px">
         <div class="row">
             <div class="col-3">
-                <h4 class="text-center" style="background-color: #E7383C; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-users" style="margin-right: 8px"></i>Liste des
-                    utilisateurs</h4>
+                <h4 class="text-center" style="background-color: #E7383C; color: #FFFFFF; padding: 15px; border-radius: 12px">
+                    <i class="fas fa-users" style="margin-right: 8px"></i>
+                    Liste des utilisateurs
+                </h4>
                 <?php if ($users): ?>
                     <table class="table mt-3">
                         <tbody>
@@ -90,9 +93,9 @@ $likes = getLikes();
 
 
                             <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
-                            <button type="submit" class="btn rounded-pill" style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart" style="margin-right: 5px"></i>
-                                J'aime
-                            </button>
+                                <button type="submit" class="btn rounded-pill" style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart" style="margin-right: 5px"></i>
+                                    J'aime
+                                </button>
                             </form>
 
 
