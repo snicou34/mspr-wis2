@@ -85,7 +85,7 @@ $likes = getLikes();
                                 <p class="card-text"><small class="text-muted">Publié
                                         le <?php echo $post['created_at'] ?></small></p>
                             </div>
-                            <img class="mb-4 mx-auto" style="height: 500px; width: 500px"
+                            <img class="mb-4 mx-auto" style="height: auto; width: 100% "
                                  src="<?php echo $post['thumbnail']; ?>">
 
 
