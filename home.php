@@ -2,6 +2,11 @@
 include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
+//Permet de charger les dépendances php
+require_once 'vendor/autoload.php';
+
+// On utilise Carbon pour gérer les dates
+use Carbon\Carbon;
 $posts = getPosts();
 $users = getUsers();
 $likes = getLikes();
@@ -64,16 +69,19 @@ $likes = getLikes();
                                         <div class="col-2">
                                             <div class="text-end" style="margin-left: 50px">
                                                 <div class="btn-group">
-                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                                    <button type="button" class="btn dropdown-toggle"
+                                                            data-bs-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
                                                         <i class="fas fa-ellipsis-v"></i>
                                                     </button>
 
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="post_u.php?id=<?php echo $post['id']; ?>">
+                                                        <a class="dropdown-item"
+                                                           href="post_u.php?id=<?php echo $post['id']; ?>">
                                                             <i class="fas fa-edit" style="margin-right: 3px"></i>Modifier
                                                         </a>
-                                                        <a class="dropdown-item" href="post_d.php?id=<?php echo $post['id']; ?>"
+                                                        <a class="dropdown-item"
+                                                           href="post_d.php?id=<?php echo $post['id']; ?>"
                                                            style=" color: red"><i class="far fa-trash-alt"
                                                                                   style="margin-right:5px"></i>Supprimer</a>
                                                     </div>
@@ -86,21 +94,34 @@ $likes = getLikes();
                                 <h4 class="card-title"><?php echo $post['title'] ?></h4>
                                 <p class="card-text"><?php echo $post['body'] ?></p>
                                 <p class="card-text"><small class="text-muted">Publié
-                                        le <?php echo $post['created_at'] ?></small></p>
+                                        <?php
+
+
+
+                                        date_default_timezone_set('Europe/Paris');
+
+
+                                        $date = Carbon::make($post['created_at'])->locale('fr-FR');
+
+
+                                        echo $date->diffForHumans(); ?>
+
+                                    </small></p>
                             </div>
                             <img class="mb-4 mx-auto" style="height: auto; width: 100% "
                                  src="<?php echo $post['thumbnail']; ?>">
 
 
                             <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
-                                <button type="submit" class="btn rounded-pill" style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart" style="margin-right: 5px"></i>
+                                <button type="submit" class="btn rounded-pill"
+                                        style="background-color: #E7383C; color: #FFFFFF"><i class="fas fa-heart"
+                                                                                             style="margin-right: 5px"></i>
                                     J'aime
                                 </button>
                             </form>
 
 
                         </div>
-
 
 
                     <?php endforeach; ?>
@@ -113,10 +134,10 @@ $likes = getLikes();
 
             </div>
             <div class="col-3">
-                <h4 class="text-center sidebar2 mb-3"><i class="fas fa-bell" style="margin-right: 8px"></i>Mes
+                <h4 class="text-center mb-3" style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-bell" style="margin-right: 8px"></i>Mes
                     notifications</h4>
 
-                <h4 class="text-center sidebar2"><i class="fas fa-comments" style="margin-right: 8px"></i>Mes
+                <h4 class="text-center" style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i class="fas fa-comments" style="margin-right: 8px"></i>Mes
                     messages</h4>
 
             </div>

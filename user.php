@@ -34,9 +34,10 @@ $posts = getPostsUser($id);
                                 <div class="card-body">
                                     <h4 class="card-title"><?php echo $post['title'] ?></h4>
                                     <p class="card-text"><?php echo $post['body'] ?></p>
-                                    <p class="card-text"><small class="text-muted">Publié le <?php echo $post['created_at'] ?></small></p>
+                                    <p class="card-text"><small class="text-muted">Publié
+                                            le <?php echo $post['created_at'] ?></small></p>
                                 </div>
-                                <img class="mb-4 mx-auto" style="height: 500px; width: 500px"
+                                <img class="mb-4 mx-auto" style="height: auto; width: 100% "
                                      src="<?php echo $post['thumbnail']; ?>">
                             </div>
 
@@ -54,6 +55,7 @@ $posts = getPostsUser($id);
         <div>
 
             <h2>Photos aimées par <?php echo $user['first_name'] ?></h2>
+
 
         </div>
     </section>
