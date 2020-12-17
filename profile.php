@@ -1,10 +1,9 @@
+<title>Mon profil - Tekkies™</title>
 <?php
 include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
 ?>
-
-
 
 
     <section style="margin-top: 130px">

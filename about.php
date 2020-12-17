@@ -1,3 +1,4 @@
+<title>À propos - Tekkies™</title>
 <?php
 include_once'includes/secure.php';
 include_once 'includes/header.php';

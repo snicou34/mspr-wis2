@@ -35,7 +35,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" aria-current="page" href="#"><i class="fas fa-bell"
-                                                                                 style="margin-right: 4px"></i>Notifications</a>
+                                                                                 style="margin-right: 4px"></i>Notifications<span class="badge bg-dark" style="margin-left: 5px">Bientôt</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-current="page" href="#"><i class="fas fa-comments"
+                                                                                 style="margin-right: 5px"></i>Messages<span class="badge bg-dark" style="margin-left: 5px">Bientôt</span></a>
                 </li>
             </ul>
             <li class="navbar-nav ml-auto">

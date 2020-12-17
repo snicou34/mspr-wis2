@@ -1,3 +1,4 @@
+<title>Aide - Tekkies™</title>
 <?php
 include_once 'includes/secure.php';
 include_once 'includes/header.php';
