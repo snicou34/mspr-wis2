@@ -98,7 +98,7 @@ $likes = getLikes();
                                  src="<?php echo $post['thumbnail']; ?>">
 
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-3">
                                     <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
                                         <button type="submit" class="btn rounded-pill"
                                                 style="background-color: #E7383C; color: #FFFFFF"><strong><?php echo $count['nb_likes'] ?></strong><i
@@ -108,13 +108,13 @@ $likes = getLikes();
                                         </button>
                                     </form>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <form method="POST" action="dislike.php?post_id=<?php echo $post['id'] ?>">
                                         <button type="submit" class="btn rounded-pill"
                                                 style="background-color: #E7383C; color: #FFFFFF"><i
-                                                    class="fas fa-heart"
+                                                    class="fas fa-heart-broken"
                                                     style="margin-right: 3px; margin-left: 3px"></i>
-                                            Je n'aime pas
+                                            Je n'aime plus
                                         </button>
                                     </form>
                                 </div>

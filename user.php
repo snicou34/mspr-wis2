@@ -3,31 +3,35 @@ include_once 'includes/secure.php';
 include_once 'includes/header.php';
 include_once 'includes/helpers.php';
 require_once 'vendor/autoload.php';
+
 use Carbon\Carbon;
+
 $id = $_GET['id'];
 $user = getUser($id);
 $posts = getPostsUser($id);
 $likes = getUserLikes($id);
 ?>
 
-    <section style="margin-top: 130px">
+    <section style="margin-top: 130px; margin-bottom: 40px">
 
         <div class="container col-6 justify-content-between align-items-center">
 
         </div>
-        <div class="container col-6">
-            <img class="mb-3 mt-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="height: 300px"src="<?php echo $user['thumbnail']; ?>">
+        <div class="container col-2">
+            <img class="mb-3 mt-3 mx-auto shadow p-3 mb-5 bg-white rounded" style="height: 300px" src="<?php echo $user['thumbnail']; ?>">
             <p>Prénom : <strong><?php echo $user['first_name']; ?></strong></p>
             <p>Nom : <strong><?php echo $user['last_name'] ?></strong></p>
+            <p>Date de naissance : <strong><?php echo $user['birthday']; ?></strong></p>
             <p>Ville : <strong><?php echo $user['city'] ?></strong></p>
         </div>
     </section>
-    <div class="row">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col-6 mx-auto">
             <section>
                 <div>
 
-                    <h2>Publications de <?php echo $user['first_name'] ?></h2>
+                    <h2 class="mb-4">Publications de <?php echo $user['first_name'] ?></h2>
                     <div>
 
                         <?php foreach ($posts as $post):
@@ -60,13 +64,12 @@ $likes = getUserLikes($id);
 
             </section>
         </div>
-    </div>
-    <div class="row">
+
         <div class="col-6 mx-auto">
             <section>
                 <div>
 
-                    <h2>Publications aimées par <?php echo $user['first_name'] ?></h2>
+                    <h2 class="mb-4">Publications aimées par <?php echo $user['first_name'] ?></h2>
                     <?php foreach ($likes as $post):
                         $userpost = getUser($post['user_id']);
                         ?>
@@ -97,8 +100,6 @@ $likes = getUserLikes($id);
             </section>
         </div>
     </div>
-
-
 
 
 <?php include_once 'includes/footer1.php'; ?>

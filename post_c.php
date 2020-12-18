@@ -5,6 +5,8 @@ include_once 'includes/helpers.php';
 $posts=getPosts();
 
 ?>
+
+
     <section class="col-8 mx-auto" style="margin-top: 130px">
         <div class="container col-6 mt-4" >
             <form action="store_post.php" method="POST">
@@ -24,8 +26,7 @@ $posts=getPosts();
                     <small id="emailHelp" class="form-text text-muted">Insérer le lien de l'image</small>
                 </div>
 
-                <button class="btn custom-main mb-3" type="submit"><i class="fas fa-paper-plane"
-                                                                                                                                                         style="margin-right: 5px"></i>
+                <button class="btn custom-main mb-3" type="submit"><i class="fas fa-paper-plane" style="margin-right: 5px"></i>
                     Publier votre publication
                 </button>
             </form>
