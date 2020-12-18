@@ -99,10 +99,10 @@ $likes = getLikes();
                                 <div class="col-4">
                                     <form method="POST" action="like.php?post_id=<?php echo $post['id'] ?>">
                                         <button type="submit" class="btn rounded-pill"
-                                                style="background-color: #E7383C; color: #FFFFFF"><i
+                                                style="background-color: #E7383C; color: #FFFFFF"><strong><?php echo $count['nb_likes'] ?></strong><i
                                                     class="fas fa-heart"
-                                                    style="margin-right: 5px"></i>
-                                            J'aime <?php echo $count['nb_likes'] ?>
+                                                    style="margin-right: 3px; margin-left: 3px"></i>
+                                            J'aime
                                         </button>
                                     </form>
                                 </div>
