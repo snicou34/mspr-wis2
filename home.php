@@ -109,6 +109,14 @@ $likes = getLikes();
                                     </form>
                                 </div>
                                 <div class="col-4">
+                                    <form method="POST" action="dislike.php?post_id=<?php echo $post['id'] ?>">
+                                        <button type="submit" class="btn rounded-pill"
+                                                style="background-color: #E7383C; color: #FFFFFF"><i
+                                                    class="fas fa-heart"
+                                                    style="margin-right: 3px; margin-left: 3px"></i>
+                                            Je n'aime pas
+                                        </button>
+                                    </form>
                                 </div>
                                 <div class="col-4">
                                     <p class="card-text text-end mt-2"><small class="text-muted">Publié

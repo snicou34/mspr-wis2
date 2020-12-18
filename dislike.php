@@ -8,9 +8,9 @@ $post_id = $_GET['post_id'];
 $user_id = $_SESSION['user']['id'];
 
 $dbh = connectDB();
-$stmt = $dbh->prepare('INSERT INTO likes (user_id, post_id) VALUES (:user_id, :post_id)');
-$stmt->bindParam(':user_id', $user_id);
-$stmt->bindParam(':post_id', $post_id);
+$stmt = $dbh->prepare('DELETE FROM likes WHERE post_id = :post_id AND user_id= :user_id');
+$stmt->bindValue(':post_id', $post_id);
+$stmt->bindValue(':user_id', $user_id);
 $stmt->execute();
 
 header('Location: home.php');

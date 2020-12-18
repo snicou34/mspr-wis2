@@ -1,7 +1,7 @@
 <?php
 function connectDB()
 {
-    return new PDO('mysql:host=localhost;dbname=tekkies', 'root', 'root', [PDO:: MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']);
+    return new PDO('mysql:host=localhost;dbname=tekkies', 'root', '', [PDO:: MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']);
 }
 
 function ConnectUser($data)
@@ -66,7 +66,7 @@ function getPost($id)
 function getLikes()
 {
     $dbh = connectDB();
-    $stmt = $dbh->prepare("SELECT * FROM likes COUNT(*)");
+    $stmt = $dbh->prepare("SELECT * FROM likes");
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
