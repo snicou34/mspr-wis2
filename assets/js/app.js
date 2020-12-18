@@ -19,6 +19,29 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 __webpack_require__(/*! ./sticky */ "./src/js/sticky.js");
 
+__webpack_require__(/*! ./scrollreveal */ "./src/js/scrollreveal.js");
+
+/***/ }),
+
+/***/ "./src/js/scrollreveal.js":
+/*!********************************!*\
+  !*** ./src/js/scrollreveal.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var scrollreveal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scrollreveal */ "./node_modules/scrollreveal/dist/scrollreveal.es.js");
+
+var slideUp = {
+  distance: '50%',
+  origin: 'bottom',
+  opacity: 0.5,
+  interval: 80
+};
+Object(scrollreveal__WEBPACK_IMPORTED_MODULE_0__["default"])().reveal('.slide-up', slideUp);
+
 /***/ }),
 
 /***/ "./src/js/sticky.js":

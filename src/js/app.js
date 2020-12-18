@@ -8,3 +8,4 @@ try {
 
 require('bootstrap');
 require('./sticky');
+require('./scrollreveal');

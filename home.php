@@ -52,7 +52,7 @@ $likes = getLikes();
                         ?>
 
 
-                        <div class="card mb-5 shadow p-3 mb-5 bg-white rounded" style="border: none">
+                        <div class="card mb-5 shadow p-3 mb-5 bg-white rounded slide-up" style="border: none">
                             <div class="row">
                                 <div class="col-6">
                                     <div class="mb-4">
