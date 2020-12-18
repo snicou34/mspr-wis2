@@ -14,6 +14,7 @@ $likes = getLikes();
     <section class="container" style="margin-top: 130px">
         <div class="row">
             <div class="col-3">
+                <div id="sticker-list">
                 <h4 class="text-center sidebar1">
                     <i class="fas fa-users" style="margin-right: 8px"></i>
                     Liste des utilisateurs
@@ -39,6 +40,7 @@ $likes = getLikes();
                 <?php endif; ?>
 
 
+            </div>
             </div>
             <div class="col-6">
 
@@ -139,6 +141,7 @@ $likes = getLikes();
 
             </div>
             <div class="col-3">
+                <div id="sticker-options">
                 <h4 class="text-center mb-3"
                     style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i
                             class="fas fa-bell" style="margin-right: 8px"></i>Mes
@@ -148,11 +151,11 @@ $likes = getLikes();
                     style="background-color: #B2B2B2; color: #FFFFFF; padding: 15px; border-radius: 12px"><i
                             class="fas fa-comments" style="margin-right: 8px"></i>Mes
                     messages</h4>
+                </div>
 
             </div>
         </div>
 
     </section>
-
 
 <?php include_once 'includes/footer1.php'; ?>
