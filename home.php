@@ -111,7 +111,7 @@ $likes = getLikes();
                                 <div class="col-5">
                                     <form method="POST" action="dislike.php?post_id=<?php echo $post['id'] ?>">
                                         <button type="submit" class="btn rounded-pill"
-                                                style="background-color: #E7383C; color: #FFFFFF"><i
+                                                style="background-color: transparent; color: #E7383C; border-color: #E7383C; border-style: solid; border-width: 2px"><i
                                                     class="fas fa-heart-broken"
                                                     style="margin-right: 3px; margin-left: 3px"></i>
                                             Je n'aime plus
